@@ -4,145 +4,115 @@
     <head>
         <meta charset="UTF-8"/>
         <Title>Партфолио</Title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     
     <body>
-        <header>
-            <div class="decor-line-upper-header"></div>
-
-            <div class="header-elements">
-                <div class="avatar-info">
-                    <div class="col1">
-                        <img src="img/avatar.jpg" height="200px" width="200px">
-                    </div>
-    
-                    <div class="col2">
-                        <p class="name-text">Golubev Dmitriy</p>
-                        <p class="profession-text">Junior .NET Developer</p>
-                        <img src="img/google-icon.png" alt="Google">
-                        <img src="img/insa-icon.png" alt="Instagram">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__author">
+                    <img class="header__avatar" src="img/avatar.jpg" alt="portrait of the author">
+                    <div class="header__info">
+                        <h1 class="header__name">Dmitriy Golubev</h1>
+                        <p class="header__profession">Junior .NET developer</p>
+                        <img class="header__link" src="img/insa-icon.png" alt="Instagram">
+                        <img class="header__link" src="img/google-icon.png" alt="Google">
                     </div>
                 </div>
 
-        
-                <div class="button-contact-me">
-                    <img src="img/iconmonstr-telegram-1.png">
-                    <p>ContactMe</p>
-                </div> 
-                
+                <a class="header__button" href="https://t.me/PAKAJl">
+                    <img class="header__telegram" src="img/iconmonstr-telegram-1.png" alt="Telegram">
+                    <p class="header__button-text">CONTACT ME</p>
+                </a> 
             </div>
         </header>
 
-        <main>
-            <div class="main-content">
-                <article class="abaut-me_article">
-                    <h2>About Me</h2>
-                    <p>
-                        Hi, this is my resume page.
-                        In it I will tell about myself, 
-                        show and tell what I do.
-                    </p>
-                    <p>
-                        My name is Dima, I live in Belarus, I am 18 years old. I study as a programmer at the College of Engineering, 
-                        Technology and Design in Grodno. In the future I want to work and develop in this area.
-                    </p>
-                    <p>
-                        Another hobby of mine is music. I started to do this since childhood (then I didn’t like it),
-                        got a musical education. And now I play gtara and sing in my free time.
-                    </p>
-                </article>
-                <article class="lastest-projects-article">
-                    <h2>Lastest Projects</h2>
-                    <h3>KickStarter - Velocity</h3>
-                    <h4>A responsive Bootstrap template designed for digital products</h4>
-                </article>
-            </div>
+        <main class="main">
+            <div class="main__container">
+                <div class="main__left-side-container">
+                   <section class="main-about-me">
+                        <h2 class="main-about-me__heading2">About Me</h2>
+                        <p class="main-about-me__text">Hi, this is my resume page. In it I will tell about myself, show and tell what I do.</p>
+                        <p class="main-about-me__text">My name is Dima, I live in Belarus, I am 18 years old. I study as a programmer at the College of Engineering, Technology and Design in Grodno. In the future I want to work and develop in this area.</p>
+                        <p class="main-about-me__text">Another hobby of mine is music. I started to do this since childhood (then I didn’t like it), got a musical education. And now I play gtara and sing in my free time.</p>
+                   </section>
+                       
+                    <section class="main-lastest-projects">
+                        <h2 class="main-lastest-projects__heading2">Lastest Projects</h2>
+                        <h3 class="main-lastest-projects__heading3">KickStarter - Velocity</h3>
+                        <h4 class="main-lastest-projects__heading4"> A responsive Bootstrap template designed for digital products</h4>
+                    </section>
+                </div>
+            
 
-            <div class="aside">
-                <aside class="my-contacts">
-                    <div>
-                        <img src="img/icons8-карта-40.png" alt="" height="20px"><p>Grodno, Belarus</p>
-                    </div>
-                    <div>
-                        <img src="img/important-mail.png" alt="" height="20px"><p>dgolubev7890@gmail.com</p>
-                    </div>
-                </aside>
-
-                <aside class="my-skills">
-                    <h2>Skills</h2>
-                    <p>
-                        Here is written the level of proficiency in various
-                         programming technologies. 
-                        As I study, I will edit this block
-                    </p>
-                    <div class="skill">
-                        <p class="skill-name">.NET</p>
-                        <div class="one-hundred-bar">
-                            <div class="dot-net-skill"></div>
-                            <p class="pecents">25%</p>
+                <div class="main__right-side-container">
+                    <section class="main-contacts">
+                        <div class="main-contacts__address">
+                            <img class="main-contacts__map-icon" src="img/icons8-карта-40.png" alt="Map" height="20px"><p class="main-contacts__text">Grodno, Belarus</p>
                         </div>
-                    </div>
-
-                    <div class="skill">
-                        <p class="skill-name">Delphi</p>
-                        <div class="one-hundred-bar">
-                            <div class="delphi-skill"></div>
-                            <p class="pecents">70%</p>
+                        <div class="main-contacts__email">
+                            <img class="main-contacts__email-icon" src="img/important-mail.png" alt="Mail" height="20px"><a class="main-contacts__link" href="mailto:dgolubev7890@gmail.com" >dgolubev7890@gmail.com</a>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="skill">
-                        <p class="skill-name">HTML, CSS</p>
-                        <div class="one-hundred-bar">
-                            <div class="html-css-skill"></div>
-                            <p class="pecents">20%</p>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <p class="skill-name">JavaScript</p>
-                        <div class="one-hundred-bar">
-                            <div class="js-skill"></div>
-                            <p class="pecents">2%</p>
-                        </div>
-                    </div>
-
-                </aside>
-
-                <aside class="languages">
-                    <h2>Languages</h2>
-                    <div>
-                        <p>
-                            <strong>Engilsh: </strong>
-                            Beginer
-                            <img class="full-star" src="img/icons8-звезда-100.png" alt="">
-                        </p>
-                    </div>
-
-                    <div>    
-                        <p>
-                            <strong>Russian: </strong>
-                            Naitive Speaker
-                            <img class="full-star" src="img/icons8-звезда-100.png" alt="">
-                            <img class="full-star" src="img/icons8-звезда-100.png" alt="">
-                            <img class="full-star" src="img/icons8-звезда-100.png" alt="">
-                            <img class="full-star" src="img/icons8-звезда-100.png" alt="">
-                            <img class="full-star" src="img/icons8-звезда-100.png" alt="">
-                        </p>
+                    <section class="main-skills">
+                        <h2 class="main-skills__heading">Skills</h2>
+                        <p class="main-skills__text">Here is written the level of proficiency in various programming technologies. As I study, I will edit this block.</p>
                         
-                    </div>
+                        <div class="main-skills__skill">
+                            <p class="main-skills__skill-name">.NET</p>
+                            <div class="main-skills__one-hundred-bar">
+                                <div class="main-skills__skill-bar--dot-net main-skills__skill-bar"></div>
+                                <p class="main-skills__pecents">25%</p>
+                            </div>
+                        </div>
 
-                    <div>
-                        <p>
-                            <strong>Belarusian: </strong>
-                            Pre-Intermidiate
-                            <img class="full-star" src="img/icons8-звезда-100.png" alt="">
-                            <img class="full-star" src="img/icons8-звезда-100.png" alt="">
-                            <img class="half-star" src="img/half-star.png" alt="">
+                        <div class="main-skills__skill">
+                            <p class="main-skills__skill-name">Delphi</p>
+                            <div class="main-skills__one-hundred-bar">
+                                <div class="main-skills__skill-bar--delphi main-skills__skill-bar"></div>
+                                <p class="main-skills__pecents">70%</p>
+                            </div>
+                        </div>
+
+                        <div class="main-skills__skill">
+                            <p class="main-skills__skill-name">HTML, CSS</p>
+                            <div class="main-skills__one-hundred-bar">
+                                <div class="main-skills__skill-bar--html-css main-skills__skill-bar"></div>
+                                <p class="main-skills__pecents">15%</p>
+                            </div>
+                        </div>
+
+                        <div class="main-skills__skill">
+                            <p class="main-skills__skill-name">JavaScript</p>
+                            <div class="main-skills__one-hundred-bar">
+                                <div class="main-skills__skill-bar--js main-skills__skill-bar"></div>
+                                <p class="main-skills__pecents">1%</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="main-languages">
+                        <h2 class="main-languages__heading">Languages</h2>
+                        <p class="main-languages__text"><strong class="main-languages__text--strong">Engilsh: </strong>Beginer
+                            <img class="main-language__full-star" src="img/icons8-звезда-100.png" alt="">
                         </p>
-                    </div>
-                </aside>
+
+                        <p class="main-languages__text"><strong class="main-languages__text--strong">Russian: </strong>Naitive Speaker
+                            <img class="main-language__full-star" src="img/icons8-звезда-100.png" alt="">
+                            <img class="main-language__full-star" src="img/icons8-звезда-100.png" alt="">
+                            <img class="main-language__full-star" src="img/icons8-звезда-100.png" alt="">
+                            <img class="main-language__full-star" src="img/icons8-звезда-100.png" alt="">
+                            <img class="main-language__full-star" src="img/icons8-звезда-100.png" alt="">
+                        </p>
+
+                        <p class="main-languages__text"><strong class="main-languages__text--strong">Belarusian: </strong>Pre-Intermidiate
+                            <img class="main-language__full-star" src="img/icons8-звезда-100.png" alt="">
+                            <img class="main-language__full-star" src="img/icons8-звезда-100.png" alt="">
+                            <img class="main-language__half-star" src="img/half-star.png" alt="">
+                        </p>
+                    </section>
+                </div>
             </div>
         </main> 
 
