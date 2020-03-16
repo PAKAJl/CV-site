@@ -75,9 +75,8 @@ header::before{
     display: flex;
     align-items: center;
     background-color: #53ba4f;
-    align-items: center;
     border-radius: 3px;
-    box-shadow: 0 1px 25px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
     text-decoration: none;
 }
 
@@ -115,7 +114,7 @@ header::before{
 .main-about-me{
     background-color: white;
     box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 30px;
 }
 
@@ -133,7 +132,7 @@ header::before{
 .main-lastest-projects{
     background-color: white;
     box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 30px;
 }
 
@@ -149,18 +148,53 @@ header::before{
     font-size: 20px;
 }
 
-.main-lastest-projects__text{
-    font-family: 'Montserrat Light',sans-serif;
-    text-align: center;
-    color: #6e787a;
-    font-size: 14px;
+.main-lastest-project__img--main{
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 3px rgba(116, 112, 112, 0.5);
 }
 
+.main-lastest-projects__text{
+    font-family: 'Montserrat Light',sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.main-lastest-projects__button {
+    display: flex;
+    justify-content: center;
+}
+
+.main-lastest-projects__link{
+    display: flex;
+    align-items: center;
+    background-color: #43a0cc;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-decoration: none;
+}
+
+.main-lastest-projects__like{
+    width: 15px;
+    height: 15px;
+    margin: 0 0 0 10px;
+}
+
+.main-lastest-projects__button-text{
+    font-family: 'Montserrat Light',sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 10px 10px 5px;
+    color: white;
+    text-transform: uppercase;
+   
+}
 /*Начало Contacts*/
 .main-contacts {
     background-color: white;
     box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 30px;
 }
 
@@ -194,7 +228,7 @@ header::before{
 .main-skills{
     background-color: white;
     box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 30px;
 }
 
@@ -259,7 +293,7 @@ header::before{
 .main-languages{
     background-color: white;
     box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 30px;
 }
 
