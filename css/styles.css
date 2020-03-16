@@ -132,11 +132,19 @@ body{
     color: #55585d;
 }
 
+.project--main{
+    padding-bottom: 60px;
+    margin-bottom: 50px;
+    border-bottom: #cacfd0 1px solid;
+}
 .project__heading{
-    text-align: center;
     font-family: 'Montserrat Black',sans-serif;
-    font-size: 20px;
     color: #6e787a;
+}
+
+.project__heading--main{
+    text-align: center;
+    font-size: 20px;
 }
 
 .project__image--main{
@@ -157,7 +165,7 @@ body{
     justify-content: center;
 }
 
-.project__link{
+.project__link--main{
     display: flex;
     align-items: center;
     border-radius: 3px;
@@ -173,13 +181,35 @@ body{
 }
 
 .project__button-text{
-    
     margin: 10px 10px 10px 5px;
     font-family: 'Montserrat Light',sans-serif;
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
     color: white;
+}
+
+.project--secondary{
+    display: flex;
+    justify-content: left;
+}
+
+.project__heading--secondary{
+    text-align: left;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    
+}
+
+.project__image--secondary{
+    width: 200px;
+    margin-right: 30px;
+}
+
+.project__link--secondary{
+    font-family: 'Montserrat Light',sans-serif;
+    text-decoration: none;
+    color: #53ba4f;
 }
 /*Начало Contacts*/
 .contacts {
