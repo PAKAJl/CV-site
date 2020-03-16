@@ -93,6 +93,7 @@ header::before{
     font-weight: 600;
     margin: 10px 10px 10px 5px;
     color: white;
+    text-transform: uppercase;
 }
 
 .main__container{
@@ -102,11 +103,11 @@ header::before{
     margin: 0 auto;
 }
   
-.main__left-side-container{
+.main__left-side{
     margin: 50px 30px 0 0; 
 }
 
-.main__right-side-container{
+.main__right-side{
     margin: 50px 0 0 0; 
 }
 
@@ -118,7 +119,7 @@ header::before{
     margin-bottom: 30px;
 }
 
-.main-about-me__heading2{
+.main-about-me__heading{
     font-family: 'Montserrat Black',sans-serif;
     color: #55585d;
 }
@@ -136,19 +137,19 @@ header::before{
     margin-bottom: 30px;
 }
 
-.main-lastest-projects__heading2{
+.main-lastest-projects__heading{
     font-family: 'Montserrat Black',sans-serif;
     color: #55585d;
 }
 
-.main-lastest-projects__heading3{
+.main-lastest-projects__heading--level2{
     font-family: 'Montserrat Black',sans-serif;
     text-align: center;
     color: #6e787a;
     font-size: 20px;
 }
 
-.main-lastest-projects__heading4{
+.main-lastest-projects__text{
     font-family: 'Montserrat Light',sans-serif;
     text-align: center;
     color: #6e787a;
@@ -208,14 +209,14 @@ header::before{
     margin-bottom: 40px;
 }
 
-.main-skills__skill-name{
+.main-skills__name{
     font-family: 'Montserrat Light',sans-serif;
     color: #758594;
     font-weight: 600;
     line-height: 10%;
 }
 
-.main-skills__one-hundred-bar{
+.main-skills__full-bar{
     background-color: #caced1;
     height: 20px;
     width: 100%;
@@ -224,26 +225,26 @@ header::before{
     margin-bottom: 20px;
 }
 
-.main-skills__skill-bar{
+.main-skills__bar{
     position: relative;
     background-color: #53ba4f;
     height: 20px;
     z-index: 2;
 }
 
-.main-skills__skill-bar--dot-net{
+.main-skills__bar--dot-net{
     width: 25%;
 }
 
-.main-skills__skill-bar--delphi{
+.main-skills__bar--delphi{
     width: 70%;
 }
 
-.main-skills__skill-bar--html-css{
+.main-skills__bar--html-css{
     width: 15%;
 }
 
-.main-skills__skill-bar--js{
+.main-skills__bar--js{
     width: 1%; 
 }
 
@@ -277,11 +278,11 @@ header::before{
     font-weight: 600;
 }
 
-.main-language__full-star{
+.main-language__star--full{
     width: 15px;
 }
 
-.main-language__half-star{
+.main-language__star--half{
     height: 15px;
 }
 
