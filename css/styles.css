@@ -18,17 +18,12 @@ body{
 
 /*хэдэер*/
 .header {
-    background-color: #f5f5f5;
+    border-top: #758594 10px solid;
     box-shadow: 0 -1px 25px rgba(0,0,0,0.5);
+    background-color: #f5f5f5;
 }
 
-header::before{
-    display: block;                  /* делаем псевдоэлемент блоком для последующего работы с ним, как с простым div'ом */
-    width:100%;                    /* устанавливаем ширину линию. Можно использовать произвольную ширину */
-    content: '';                     /* позволяет вставлять генерируемое содержание в текст страницы, которое первоначально в тексте отсутствует */
-    position: absolute;              /* абсолютное позиционирование для управления линиями */
-    border-bottom: 10px solid #758594;
-}
+
 .header__container {
     display: flex;
     justify-content: space-between;
@@ -39,17 +34,17 @@ header::before{
 }
 
 .header__author {
-    width: 540px;
-    margin: 40px 0 40px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 540px;
+    margin: 40px 0 40px 0;
 }
 
 .header__avatar {
+    border-radius: 50%;
     width: 200px;
     height: 200px;
-    border-radius: 50%;
 }
 
 .header__name {
@@ -74,32 +69,33 @@ header::before{
 .header__button{
     display: flex;
     align-items: center;
-    background-color: #53ba4f;
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.5);
     text-decoration: none;
+    background-color: #53ba4f;
 }
 
-.header__telegram {
+.header__telegram-icon {
+    margin: 0 0 0 10px;
     width: 15px;
     height: 15px;
-    margin: 0 0 0 10px;
 }
 
 .header__button-text{
+    margin: 10px 10px 10px 5px;
     font-family: 'Montserrat Light',sans-serif;
     font-size: 15px;
     font-weight: 600;
-    margin: 10px 10px 10px 5px;
-    color: white;
     text-transform: uppercase;
+    color: white;
+    
 }
 
 .main{
     display: flex;
     justify-content: space-between;
-    width: 1200px;
     margin: 60px auto;
+    width: 1200px;
 }
 
 .left-side__container{
@@ -107,10 +103,10 @@ header::before{
 }
 /*Начало About Me*/
 .about-me{
-    background-color: white;
-    box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
     padding: 30px;
     margin-bottom: 30px;
+    box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
+    background-color: white;
 }
 
 .about-me__heading{
@@ -123,97 +119,92 @@ header::before{
     font-size: 16px;
 }
 
-/*Начало Lastest Projects*/
-.lastest-projects{
-    background-color: white;
-    box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
+/*Начало recent Projects*/
+.recent-projects{
     padding: 30px;
     margin-bottom: 30px;
+    box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
+    background-color: white;
 }
 
-.lastest-projects__heading{
+.recent-projects__heading{
     font-family: 'Montserrat Black',sans-serif;
     color: #55585d;
 }
 
-.lastest-projects__heading--level2{
-    font-family: 'Montserrat Black',sans-serif;
+.project__heading{
     text-align: center;
-    color: #6e787a;
+    font-family: 'Montserrat Black',sans-serif;
     font-size: 20px;
+    color: #6e787a;
 }
 
-.lastest-project__img--main{
+.project__image--main{
+    margin-bottom: 40px;
     width: 100%;
     border-radius: 3px;
-    margin-bottom: 40px;
     box-shadow: 0 0 3px rgba(116, 112, 112, 0.5);
 }
 
-.lastest-projects__text{
+.project__text{
+    margin-bottom: 20px;
     font-family: 'Montserrat Light',sans-serif;
     font-size: 16px;
-    margin-bottom: 20px;
 }
 
-.lastest-projects__button {
+.project__button {
     display: flex;
     justify-content: center;
 }
 
-.lastest-projects__link{
+.project__link{
     display: flex;
     align-items: center;
-    background-color: #43a0cc;
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.5);
     text-decoration: none;
+    background-color: #43a0cc;
 }
 
-.lastest-projects__like{
+.project__like{
+    margin: 0 0 0 10px;
     width: 15px;
     height: 15px;
-    margin: 0 0 0 10px;
 }
 
-.lastest-projects__button-text{
+.project__button-text{
+    
+    margin: 10px 10px 10px 5px;
     font-family: 'Montserrat Light',sans-serif;
     font-size: 15px;
     font-weight: 600;
-    margin: 10px 10px 10px 5px;
-    color: white;
     text-transform: uppercase;
-   
+    color: white;
 }
 /*Начало Contacts*/
 .contacts {
     background-color: white;
     box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
-    padding: 30px;
+    padding: 30px 30px 14px 30px;
     margin-bottom: 30px;
 }
 
-.contacts__address{
+.contacts__item{
     display: flex;
+    align-items: center;
+    margin-bottom: 15px;
 }
-
-.contacts__email{
-    display: flex;
-}
-
-.contacts__map-icon{
-    margin: 15px 10px 0 0;
-}
-
-.contacts__email-icon{
+.contacts__icon{
     margin-right: 10px;
 }
 
-.contacts__text{
+.contacts__address{
     font-family: 'Montserrat Light',sans-serif;
+    margin:0;
 }
 
 .contacts__link{
+    margin: 0;
     font-family: 'Montserrat Light',sans-serif;
     text-decoration: none;
     color: #53ba4f;
@@ -221,10 +212,10 @@ header::before{
 
 /*Начало Skills*/ /*Меня уже порядком заебал БЭМ*/
 .skills{
-    background-color: white;
-    box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
     padding: 30px;
     margin-bottom: 30px;
+    box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
+    background-color: white;
 }
 
 .skills__heading{
@@ -233,32 +224,36 @@ header::before{
 }
 
 .skills__text{
+    margin-bottom: 40px;
     font-family: 'Montserrat Light',sans-serif;
     font-size: 16px;
-    margin-bottom: 40px;
+}
+.skills__list{
+    padding: 0;
+    list-style: none;
 }
 
 .skills__name{
-    font-family: 'Montserrat Light',sans-serif;
-    color: #758594;
-    font-weight: 600;
     margin-bottom: 3px;
+    font-family: 'Montserrat Light',sans-serif;
+    font-weight: 600;
+    color: #758594;
 }
 
 .skills__full-bar{
-    background-color: #caced1;
-    height: 20px;
-    width: 100%;
     text-align: center;
     z-index: 3;
     margin-bottom: 20px;
+    height: 20px;
+    width: 100%;
+    background-color: #caced1;
 }
 
 .skills__bar{
     position: relative;
-    background-color: #53ba4f;
-    height: 20px;
     z-index: 2;
+    height: 20px;
+    background-color: #53ba4f;
 }
 
 .skills__bar--dot-net{
@@ -278,18 +273,18 @@ header::before{
 }
 
 .skills__pecents{
-    font-family: 'Montserrat Light',sans-serif;
     position: relative;
     z-index: 5;
     top: -35px;
+    font-family: 'Montserrat Light',sans-serif;
 }
 
 /*Начало Languages*/
 .languages{
-    background-color: white;
-    box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
     padding: 30px;
     margin-bottom: 30px;
+    box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
+    background-color: white;
 }
 
 .languages__heading{
@@ -303,8 +298,8 @@ header::before{
 
 .languages__text--strong{
     font-family: 'Montserrat Light',sans-serif;
-    color: #758594;
     font-weight: 600;
+    color: #758594;
 }
 
 .language__star--full{
@@ -317,10 +312,10 @@ header::before{
 
 /*Начало Education*/
 .education{
-    background-color: white;
-    box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
     padding: 30px;
     margin-bottom: 30px;
+    box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
+    background-color: white;
 }
 
 .education__heading{
@@ -329,18 +324,18 @@ header::before{
 }
 
 .education__text--name{
-    font-family: 'Montserrat Light',sans-serif;
-    color: #758594;
-    font-weight: 900;
     margin-bottom: 0px;
+    font-family: 'Montserrat Light',sans-serif;
+    font-weight: 900;
+    color: #758594;
 }
 
 .education__text--place{
-    font-family: 'Montserrat Light',sans-serif;
-    color: #a8aeb4;
-    font-size: 14px;
     margin-left: 40px;
     margin-top: 10px;
+    font-family: 'Montserrat Light',sans-serif;
+    font-size: 14px;
+    color: #a8aeb4;
 }
 
 .education__icon{
