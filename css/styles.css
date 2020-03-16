@@ -95,78 +95,73 @@ header::before{
     text-transform: uppercase;
 }
 
-.main__container{
+.main{
     display: flex;
     justify-content: space-between;
     width: 1200px;
-    margin: 0 auto;
-}
-  
-.main__left-side{
-    margin: 50px 30px 0 0; 
+    margin: 60px auto;
 }
 
-.main__right-side{
-    margin: 50px 0 0 0; 
+.left-side__container{
+    margin-right: 30px;
 }
-
 /*Начало About Me*/
-.main-about-me{
+.about-me{
     background-color: white;
     box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
     padding: 30px;
     margin-bottom: 30px;
 }
 
-.main-about-me__heading{
+.about-me__heading{
     font-family: 'Montserrat Black',sans-serif;
     color: #55585d;
 }
 
-.main-about-me__text{
+.about-me__text{
     font-family: 'Montserrat Light',sans-serif;
     font-size: 16px;
 }
 
 /*Начало Lastest Projects*/
-.main-lastest-projects{
+.lastest-projects{
     background-color: white;
     box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
     padding: 30px;
     margin-bottom: 30px;
 }
 
-.main-lastest-projects__heading{
+.lastest-projects__heading{
     font-family: 'Montserrat Black',sans-serif;
     color: #55585d;
 }
 
-.main-lastest-projects__heading--level2{
+.lastest-projects__heading--level2{
     font-family: 'Montserrat Black',sans-serif;
     text-align: center;
     color: #6e787a;
     font-size: 20px;
 }
 
-.main-lastest-project__img--main{
+.lastest-project__img--main{
     width: 100%;
     border-radius: 3px;
     margin-bottom: 40px;
     box-shadow: 0 0 3px rgba(116, 112, 112, 0.5);
 }
 
-.main-lastest-projects__text{
+.lastest-projects__text{
     font-family: 'Montserrat Light',sans-serif;
     font-size: 16px;
     margin-bottom: 20px;
 }
 
-.main-lastest-projects__button {
+.lastest-projects__button {
     display: flex;
     justify-content: center;
 }
 
-.main-lastest-projects__link{
+.lastest-projects__link{
     display: flex;
     align-items: center;
     background-color: #43a0cc;
@@ -175,13 +170,13 @@ header::before{
     text-decoration: none;
 }
 
-.main-lastest-projects__like{
+.lastest-projects__like{
     width: 15px;
     height: 15px;
     margin: 0 0 0 10px;
 }
 
-.main-lastest-projects__button-text{
+.lastest-projects__button-text{
     font-family: 'Montserrat Light',sans-serif;
     font-size: 15px;
     font-weight: 600;
@@ -191,66 +186,66 @@ header::before{
    
 }
 /*Начало Contacts*/
-.main-contacts {
+.contacts {
     background-color: white;
     box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
     padding: 30px;
     margin-bottom: 30px;
 }
 
-.main-contacts__address{
+.contacts__address{
     display: flex;
 }
 
-.main-contacts__email{
+.contacts__email{
     display: flex;
 }
 
-.main-contacts__map-icon{
+.contacts__map-icon{
     margin: 15px 10px 0 0;
 }
 
-.main-contacts__email-icon{
+.contacts__email-icon{
     margin-right: 10px;
 }
 
-.main-contacts__text{
+.contacts__text{
     font-family: 'Montserrat Light',sans-serif;
 }
 
-.main-contacts__link{
+.contacts__link{
     font-family: 'Montserrat Light',sans-serif;
     text-decoration: none;
     color: #53ba4f;
 }
 
 /*Начало Skills*/ /*Меня уже порядком заебал БЭМ*/
-.main-skills{
+.skills{
     background-color: white;
     box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
     padding: 30px;
     margin-bottom: 30px;
 }
 
-.main-skills__heading{
+.skills__heading{
     font-family: 'Montserrat Black',sans-serif;
     color: #55585d;
 }
 
-.main-skills__text{
+.skills__text{
     font-family: 'Montserrat Light',sans-serif;
     font-size: 16px;
     margin-bottom: 40px;
 }
 
-.main-skills__name{
+.skills__name{
     font-family: 'Montserrat Light',sans-serif;
     color: #758594;
     font-weight: 600;
-    line-height: 10%;
+    margin-bottom: 3px;
 }
 
-.main-skills__full-bar{
+.skills__full-bar{
     background-color: #caced1;
     height: 20px;
     width: 100%;
@@ -259,30 +254,30 @@ header::before{
     margin-bottom: 20px;
 }
 
-.main-skills__bar{
+.skills__bar{
     position: relative;
     background-color: #53ba4f;
     height: 20px;
     z-index: 2;
 }
 
-.main-skills__bar--dot-net{
+.skills__bar--dot-net{
     width: 25%;
 }
 
-.main-skills__bar--delphi{
+.skills__bar--delphi{
     width: 70%;
 }
 
-.main-skills__bar--html-css{
+.skills__bar--web-kit{
     width: 15%;
 }
 
-.main-skills__bar--js{
+.skills__bar--js{
     width: 1%; 
 }
 
-.main-skills__pecents{
+.skills__pecents{
     font-family: 'Montserrat Light',sans-serif;
     position: relative;
     z-index: 5;
@@ -290,35 +285,70 @@ header::before{
 }
 
 /*Начало Languages*/
-.main-languages{
+.languages{
     background-color: white;
     box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
     padding: 30px;
     margin-bottom: 30px;
 }
 
-.main-languages__heading{
+.languages__heading{
     font-family: 'Montserrat Black',sans-serif;
     color: #55585d;
 }
 
-.main-languages__text{
+.languages__text{
     font-family: 'Montserrat Light',sans-serif;
 }
 
-.main-languages__text--strong{
+.languages__text--strong{
     font-family: 'Montserrat Light',sans-serif;
     color: #758594;
     font-weight: 600;
 }
 
-.main-language__star--full{
+.language__star--full{
     width: 15px;
 }
 
-.main-language__star--half{
+.language__star--half{
     height: 15px;
 }
+
+/*Начало Education*/
+.education{
+    background-color: white;
+    box-shadow: 0 0 25px rgba(116, 112, 112, 0.5);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.education__heading{
+    font-family: 'Montserrat Black',sans-serif;
+    color: #55585d;
+}
+
+.education__text--name{
+    font-family: 'Montserrat Light',sans-serif;
+    color: #758594;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+.education__text--place{
+    font-family: 'Montserrat Light',sans-serif;
+    color: #a8aeb4;
+    font-size: 14px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.education__icon{
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+}
+
 
 @media screen and (max-width: 1210px) {
     
